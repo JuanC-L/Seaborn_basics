@@ -64,12 +64,13 @@ plt.show() #mostramos el gráfico
 
 # edad en el eje “x”, precio pagado en el eje “y”
 # hue = sexo del pasajero
-sns.scatterplot(x="age",y="fare", hue="sex", data=titanic)
+sns.scatterplot(x="age",y="fare", hue="who", data=titanic)
 plt.title("Precio pagado por edad y género")
 plt.show()
 
 # edad en el eje “x”, precio pagado en el eje “y”
 # hue = sexo del pasajero
+plt.figure(figsize=(10,6))
 sns.scatterplot(x="age",y="fare",size="class", hue="sex", data=titanic)
 plt.title("Precio pagado por edad y género")
 plt.show()
